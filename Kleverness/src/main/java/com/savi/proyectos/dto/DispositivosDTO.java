@@ -1,4 +1,6 @@
-package dto;
+package com.savi.proyectos.dto;
+
+
 
 public class DispositivosDTO {
 	private Integer id;

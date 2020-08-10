@@ -1,4 +1,5 @@
-package dto;
+package com.savi.proyectos.dto;
+
 
 public class RequestDispositivos {
 

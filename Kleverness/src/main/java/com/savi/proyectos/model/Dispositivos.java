@@ -1,4 +1,4 @@
-package com.visa.proyectos.model;
+package com.savi.proyectos.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,11 +7,13 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 public class Dispositivos {
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@ApiModelProperty(value="ID del Dispositivo", dataType="Integer",  example="1", position=1)
 	private Integer id;
 	private String type;
 	private String macAddress;
@@ -70,5 +72,6 @@ public class Dispositivos {
 	/*
 	 * Id Type Mac address QR Code Status 1. Assigned 2. Unassigned 3. Revoked
 	 */
+
 
 }

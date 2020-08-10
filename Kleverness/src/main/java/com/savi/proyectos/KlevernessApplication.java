@@ -1,4 +1,4 @@
-package com.visa.proyectos;
+package com.savi.proyectos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

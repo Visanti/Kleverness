@@ -1,23 +1,20 @@
-package com.visa.proyectos.service;
+package com.savi.proyectos.service;
 
-import java.math.BigInteger;
+
+
 import java.security.SecureRandom;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.IntStream;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.visa.proyectos.model.Dispositivos;
-import com.visa.proyectos.model.Status;
-import com.visa.proyectos.repository.DispositivosRepository;
-import com.visa.proyectos.repository.StatusRepository;
+import com.savi.proyectos.model.Dispositivos;
+import com.savi.proyectos.repository.DispositivosRepository;
 
-import dto.DispositivosDTO;
-import dto.RequestDispositivos;
+
 
 @Service
 public class DispositivosServiceImp implements DispositivosService {

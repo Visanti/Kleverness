@@ -1,4 +1,4 @@
-package com.visa.proyectos.controller;
+package com.savi.proyectos.controller;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,16 +17,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.visa.proyectos.model.Dispositivos;
-import com.visa.proyectos.model.Status;
-import com.visa.proyectos.repository.StatusRepository;
-import com.visa.proyectos.service.DispositivosService;
-
-import dto.DispositivosDTO;
-import dto.DispositivosDTOConverter;
-import dto.RequestDispositivos;
+import com.savi.proyectos.dto.DispositivosDTO;
+import com.savi.proyectos.dto.DispositivosDTOConverter;
+import com.savi.proyectos.dto.RequestDispositivos;
+import com.savi.proyectos.model.Dispositivos;
+import com.savi.proyectos.model.Status;
+import com.savi.proyectos.repository.StatusRepository;
+import com.savi.proyectos.service.DispositivosService;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/v1/WS")
 public class HubController {
 	private static final Logger logger = LoggerFactory.getLogger(HubController.class);
@@ -35,7 +36,13 @@ public class HubController {
 	DispositivosService dispositivosService;
 	@Autowired
 	StatusRepository statusRepo;
-
+	
+	
+ @GetMapping("/hola")
+	public String hola() {
+		return "hola";
+	}
+ 
 	/**
 	 * Obtenemos todos los productos
 	 * 

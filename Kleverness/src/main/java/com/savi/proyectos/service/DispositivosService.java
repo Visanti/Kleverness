@@ -1,14 +1,11 @@
-package com.visa.proyectos.service;
+package com.savi.proyectos.service;
 
 import java.util.List;
 
-import com.visa.proyectos.model.Dispositivos;
-
-import dto.DispositivosDTO;
-import dto.RequestDispositivos;
+import com.savi.proyectos.model.Dispositivos;
 
 public interface DispositivosService {
-
+	
 	public List<Dispositivos> getDispositivos();
 
 	public Dispositivos obtenerDispositivo(String id);
