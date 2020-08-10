@@ -3,12 +3,12 @@ Reto Kleverness
 
 ##Crear la base de datos prueba en postgres
 
-###_En la APP Kleverness_
-_Configurar aplication/properties_
-_spring.datasource.url=jdbc:postgresql://localhost:5432/prueba_
-_spring.datasource.username=postgres_
-_spring.datasource.password=admin_
-_spring.datasource.driver-class-name=org.postgresql.Driver_
+###En la APP Kleverness
+*Configurar aplication/properties
+*spring.datasource.url=jdbc:postgresql://localhost:5432/prueba
+*spring.datasource.username=postgres_
+*spring.datasource.password=admin_
+*spring.datasource.driver-class-name=org.postgresql.Driver_
 
 ####Crear usuario
 #Ejecutar UsuarioTest con JUnit
