@@ -3,7 +3,7 @@ Reto Kleverness
 
 ##Crear la base de datos prueba en postgres
 
-###En la APP Kleverness
+###_En la APP Kleverness_
 _Configurar aplication/properties_
 _spring.datasource.url=jdbc:postgresql://localhost:5432/prueba_
 _spring.datasource.username=postgres_
@@ -17,8 +17,8 @@ _spring.datasource.driver-class-name=org.postgresql.Driver_
 	_password:123
 
 #Generar el archivo .Jar con Maven install_
-#Crear imagen Docker_
-#Abrir un CMD y ejecutar el dockerfile con el siguiente comando_
+#_Crear imagen Docker_
+#_Abrir un CMD y ejecutar el dockerfile con el siguiente comando_
 _docker build -t prueba . _
 
 #Ejecutar la imagen de Docker en un contenedor
